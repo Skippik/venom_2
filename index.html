@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./style/style.css">
     <title>Venom-2</title>
 </head>
-<body>
+<body class="blood">
     <header class="header">
         <div class="container">
             <div class="header__title">
@@ -27,7 +27,9 @@
     <main class="main">
         <div class="container">
             <h3 class="main__subtitle">16 сентября 2021</h3>
-            <img src="./img/main__title.png" alt="title__venom" class="main__title">
+            <svg width="835px" height="206px" class="main__title">
+                <use xlink:href="./img/icon-sprite.svg#main__title"></use>
+            </svg>
             <div class="main__description">
                 <span>В настырном журналисте по-прежнему живет симбиот.<br>
                     Том Харди в образе обаятельного суперзлодея<br>
@@ -40,9 +42,14 @@
                     </svg>
                 <!-- <img src="./img/play.png" alt="play" class="play"> -->
                 смотреть трейлер</a>
-                <a href="#" class="tickets">билеты на премьеру</a>
+                <a href="#" class="tickets">
+                    <svg width="25px" height="25px" class="icon-tickets">
+                        <use xlink:href="./img/icon-sprite.svg#ticket"></use>
+                    </svg>
+                билеты на премьеру</a>
             </div>
         </div>
     </main>
+    <img src="./img/venom.png" alt="venom" class="venom">
 </body>
 </html>

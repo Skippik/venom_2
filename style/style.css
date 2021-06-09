@@ -27,6 +27,7 @@ body {
 
 .header__link:hover {
     color: #8D0019;
+    transition: color 1s;
 }
 
 .main {
@@ -43,9 +44,16 @@ body {
 }
 
 .main__title {
+    fill: white;
     width: 80%;
     height: 50%;
     padding-bottom: 40px;
+    transition: fill 0.7s;
+}
+
+.main__title:hover {
+    fill: #8D0019;
+    transition: fill 0.7s;
 }
 
 .main__description {
@@ -59,6 +67,7 @@ body {
 
 .main__order {
     display: flex;
+    align-items: center;
 }
 
 .main-trailer {
@@ -80,23 +89,61 @@ body {
     border: none;
     text-decoration: none;
     margin-right: 51px;
+    transition: background 0.7s, color 0.7s;
+    
 }
 
 .icon {
     padding-right: 10px;
     fill: #8D0019;
+    transition: fill 0.5s;
 }
 
 .main-trailer:hover {
-    background: #14131A;
-    transition: fill 0.2s;
+    background: #8D0019;
     color: #FFFFFF;
+    transition: background 0.7s, color 0.7s;
 }
 
 .main-trailer:hover .icon{
     fill: white;
-    transition: fill 0.2s;
+    transition: fill 0.5s;
 }
 
+.tickets {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.5s;
+}
 
+.icon-tickets {
+    padding-right: 10px;
+    fill:#FFFFFF;
+    transition: fill 0.5s;
+}
 
+.tickets:hover .icon-tickets {
+    fill: #8D0019;
+    transition: fill 0.5s;
+}
+
+.tickets:hover {
+    color: #8D0019;
+    transition: color 0.5s;
+}
+
+.venom {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.blood {
+    background-image: url('../img/blood.png'), url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-position: top right;
+}
