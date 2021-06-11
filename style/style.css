@@ -40,14 +40,14 @@ body {
     font-size: 24px;
     line-height: 28px;
     color: rgba(255, 255, 255, 0.8);
-    padding-bottom: 38px;
+    padding-bottom: 2%;
 }
 
 .main__title {
     fill: white;
     width: 80%;
     height: 50%;
-    padding-bottom: 40px;
+    padding-bottom: 3%;
     transition: fill 0.7s;
     animation-name: animated;
     animation-duration: 5s;
@@ -79,7 +79,7 @@ body {
     font-size: 16px;
     line-height: 140%;
     color: rgba(255, 255, 255, 0.8);
-    padding-bottom: 70px;
+    padding-bottom: 5%;
 }
 
 .main__order {
@@ -156,13 +156,14 @@ body {
     position: absolute;
     top: 0;
     right: 0;
+    max-width: 720px;
+    width: 40%;
 }
 
 
 .blood {
     background: url("../img/blood.png") no-repeat top right, #14131A 
     url("../img/background.jpg") no-repeat center center;
-    
 }
 
 .content {
@@ -286,4 +287,124 @@ h3 {
     font-size: 16px;
     line-height: 140%;
     color: rgba(255, 255, 255, 0.8);
+}
+
+.menu-button {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .blood {
+        background: #14131A;
+    }
+    .venom {
+        width: 30%;
+        margin-top: 39%;
+    }
+    .main__subtitle {
+        text-align: center;
+    }
+    .main__title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 7%;
+    }
+    .main__description {
+        text-align: center;
+        margin-bottom: 5%;
+    }
+}
+
+@media (max-width: 500px) {
+    .header__title {
+        display: flex;
+        justify-content: space-between;
+    }
+    .header__title .logo {
+        margin-left: 6%;
+    }
+    
+    .header__title a {
+        display: none;
+    }
+    .menu-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        border: none;
+        background: #14131A;
+        color: white;
+    }
+
+    .menu__button-icon {
+        padding-left: 20%;
+        margin-right: 30%;
+    }
+
+    .menu-button_mobile {
+        fill: black;
+    }
+    .venom {
+        margin-top: 58%;
+        width: 128px;
+    }
+    .main__order {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-trailer {
+        margin: 0 auto;
+    }
+
+    .tickets {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 414px) {
+    .blood {
+        background: #14131A;
+    }
+    .venom {
+        margin-top: 58%;
+        width: 128px;
+    }
+    .main__subtitle {
+        text-align: center;
+    }
+    .main__title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .main__description {
+        width: 270px;
+        height: 84px;
+        margin: 0 auto;
+        margin-bottom: 15%;
+}
+
+
+@media (max-width: 375px) {
+    .main__description {
+        width: 270px;
+        height: 84px;
+        margin: 0 auto;
+        margin-bottom: 15%;
+    }
+    .menu-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    .menu-button_mobile {
+        fill: black;
+    }
 }
