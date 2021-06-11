@@ -19,14 +19,28 @@
         <div class="container">
             <div class="header__title">
                 <img src="./img/logo.svg" alt="logo" class="logo">
-                <button class="menu-button">
+                <button class="menu-button" type="button" aria-expanded="false" aria-controls="menu__list">
                     <span class="menu__button-text">Меню</span>
-                    <img src="./img/menu-button_mobile.svg" alt="icon: burger-menu" class="menu__button-icon">
+                    <svg width="50px" height="30px" class="icon">
+                        <use class="menu__icon-open" xlink:href="./img/icon-sprite.svg#menu"></use>
+                        <use class="menu__icon-close" xlink:href="./img/icon-sprite.svg#close_menu"></use>
+                    </svg>
+                    <!-- <img src="./img/menu-button_mobile.svg" alt="icon: burger-menu" class="menu__button-icon"> -->
                 </button>
-                <a href="./about.html" class="header__link">о фильме</a>
-                <a data-fancybox href="https://www.youtube.com/watch?v=Othd8W8o3t0" class="header__link">Трейлер</a>
-                <a href="#" class="header__link">Актеры</a>
-                <a href="#" class="header__link">Премьера</a>
+                <ul class="menu__list" id="menu__list">
+                    <li class="menu__item">
+                        <a href="./about.html" class="header__link">о фильме</a>
+                    </li>
+                    <li class="menu__item">
+                        <a data-fancybox href="https://www.youtube.com/watch?v=Othd8W8o3t0" class="header__link">Трейлер</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="header__link">Актеры</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="header__link">Премьера</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </header>
@@ -56,5 +70,8 @@
         </div>
     </main>
     <img src="./img/venom.png" alt="venom" class="venom">
+    <div class="burger__menu">
+        
+    </div>
 </body>
 </html>

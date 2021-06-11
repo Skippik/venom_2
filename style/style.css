@@ -6,8 +6,16 @@ body {
     margin-top: 40px;
 }
 
-.logo {
-    margin-right: 52px;
+.header__title {
+    display: flex;
+    margin-left: auto;
+}
+
+.menu__list {
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    margin-left: 50px;
 }
 
 
@@ -21,9 +29,7 @@ body {
     text-decoration: none;
 }
 
-.header__link:last-child{
-    padding: 0;
-}
+
 
 .header__link:hover {
     color: #8D0019;
@@ -310,39 +316,12 @@ h3 {
     .creators {
         margin-left: 10%;
     }
-}
-
-@media (max-width: 1000px) {
-    .header__title {
-        display: flex;
-        justify-content: space-between;
-    }
-    .header__title .logo {
-        margin-left: 6%;
-    }
-    
-    .header__link{
-        display: none;
-    }
-    .menu-button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;
-        border: none;
-        background: #14131A;
-        color: white;
-    }
-
-    .menu__button-icon {
-        padding-left: 20%;
-        margin-right: 30%;
-    }
-
-    .menu-button_mobile {
-        fill: black;
+    .venom {
+        width: 40%;
+        margin-top: 10%;
     }
 }
+
 
 @media (max-width: 991px) {
     .content {
@@ -430,9 +409,12 @@ h3 {
         text-align: center;
         margin-bottom: 5%;
     }
+    .venom {
+        margin-top: 45%;
+    }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 501px) {
     .about__description {
         text-align: center;
     }
@@ -485,24 +467,23 @@ h3 {
     .menu-button {
         display: flex;
         align-items: center;
-        justify-content: center;
         padding: 10px;
         border: none;
         background: #14131A;
         color: white;
+        fill: white;
+        margin-left: auto;
     }
 
-    .menu__button-icon {
-        padding-left: 20%;
-        margin-right: 30%;
+    .icon {
+        padding-left: 10px;
     }
 
     .menu-button_mobile {
-        fill: black;
+        fill: white;
     }
     .venom {
-        margin-top: 58%;
-        width: 128px;
+        margin-top: 50%;
     }
     .main__order {
         display: flex;
