@@ -15,10 +15,11 @@ body {
     display: flex;
     justify-content: space-around;
     align-items:center;
-    margin-left: 50px;
 }
 
-
+.logo {
+    margin-right: 50px;
+}
 .header__link {
     padding-right: 30px;
     font-style: normal;
@@ -303,6 +304,10 @@ h3 {
     display: none;
 }
 
+.menu__close {
+    display: none;
+}
+
 @media (max-width: 1540px) {
     .about__blood {
         background: #14131A;;
@@ -414,7 +419,54 @@ h3 {
     }
 }
 
-@media (max-width: 501px) {
+@media (max-width: 501px) { 
+    .menu__list {
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 9;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: transform 0.2s;
+    }
+
+    .header__link {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        color: #14131A;
+    }
+
+    .menu__item {
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    .menu__close {
+        position: fixed;
+        right: 25px;
+        top: 25px;
+        display: flex;
+        align-items: center;
+        z-index: 10;
+        fill: #14131A;
+        transform: translateX(200%);
+        transition: transform 0.2s;
+        transition-delay: 0.2s;
+    }
+
+    .is-activ {
+        transform: translateX(0%);
+    }
+
+
     .about__description {
         text-align: center;
     }
@@ -426,9 +478,6 @@ h3 {
         margin-left: 6%;
     }
     
-    .header__title .header__link {
-        display: none;
-    }
     .content {
         display: flex;
         flex-direction: column;
@@ -473,6 +522,24 @@ h3 {
         color: white;
         fill: white;
         margin-left: auto;
+    }
+
+    .menu__close {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border: none;
+        color: #14131A;
+        margin-left: auto;
+        z-index: 10;
+        border: none;
+        cursor: pointer;
+
+    }
+
+    .menu__close span {
+        padding-right: 10px;
     }
 
     .icon {
