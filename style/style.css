@@ -451,6 +451,7 @@ h3 {
 
     .menu__close {
         position: fixed;
+        opacity: 0;
         right: 25px;
         top: 25px;
         display: flex;
@@ -464,6 +465,7 @@ h3 {
 
     .is-activ {
         transform: translateX(0%);
+        opacity: 1;
     }
 
 
